@@ -1,0 +1,680 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling with simple gradient background */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #f0f4f8, #e9eff1);
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1d3557; /* Darker color for the navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Navbar logo */
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Navbar links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* Hover effect for navbar links */
+.navbar .nav-links a:hover {
+    color: #a8dadc; /* Lighter color on hover */
+}
+
+/* Login container */
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Form Heading */
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #1d3557; /* Consistent text color */
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f3f4f6;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1d3557; /* Consistent focus color */
+    outline: none;
+    background-color: #fff;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1d3557; /* Consistent button color */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover {
+    background-color: #457b9d; /* Lighter shade on hover */
+}
+
+/* Sign Up button */
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #1d3557;
+    border-radius: 8px;
+    color: #1d3557;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Forgot password link */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #1d3557;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #457b9d;
+}
+
+/* Sign Up container */
+.signup-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    text-align: center;
+    margin-top: 100px; /* Space from the navbar */
+}
+
+/* Form Heading */
+.signup-container h2 {
+    margin-bottom: 25px;
+    color: #1d3557;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Double input group styling for side-by-side fields */
+.input-group.double {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Half-width input styling */
+.input-half {
+    width: 48%; /* Two inputs side by side */
+}
+
+/* Address input styling for full width */
+.address-input {
+    width: 100%; /* Full width for address */
+}
+
+/* Input labels */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Input field styling */
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f3f4f6;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1d3557;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Sign Up button */
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1d3557;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #457b9d;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 800px; /* Same width as the sign up container */
+    margin: 50px auto; /* Centered */
+    text-align: center;
+}
+
+/* Dashboard Heading */
+.dashboard-container h2 {
+    margin-bottom: 25px;
+    color: #1d3557;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* Dashboard row styling for side-by-side items */
+.dashboard-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Dashboard item styling */
+.dashboard-item {
+    text-align: left;
+    width: 48%; /* Each item will take up 48% of the row */
+}
+
+/* Labels */
+.dashboard-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Text placeholders */
+.dashboard-item span {
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* Packs container */
+.packs-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Same width as other containers */
+    margin: 100px auto; /* Centered */
+    text-align: center;
+}
+
+/* Packs Heading */
+.packs-container h2 {
+    margin-bottom: 20px; /* Reduced margin */
+    color: #1d3557;
+    font-weight: 700;
+    font-size: 28px; /* Slightly smaller font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for packs */
+.packs-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 15px; /* Space between rows */
+}
+
+/* Individual pack styling */
+.pack-item {
+    background: #f9fafb; /* Lighter background for packs */
+    padding: 15px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 0 0 48%; /* Allow each pack item to take up 48% of the row */
+}
+
+.pack-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pack title */
+.pack-item h3 {
+    margin: 0 0 8px; /* Reduced margin */
+    color: #1d3557;
+    font-size: 22px; /* Slightly smaller font size */
+    font-weight: 600;
+}
+
+/* Pack details */
+.pack-item p {
+    margin: 4px 0; /* Reduced margin */
+    color: #555; /* Slightly darker text for better readability */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Price styling */
+.pack-item p:first-of-type {
+    font-weight: bold;
+    font-size: 18px; /* Adjusted size for price */
+    color: #333; /* Removed distinct color for price */
+}
+
+/* Contact Us container */
+.contact-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Same width as other containers */
+    margin: 100px auto; /* Centered */
+    text-align: center;
+}
+
+/* Contact Us Heading */
+.contact-container h2 {
+    margin-bottom: 20px;
+    color: #1d3557;
+    font-weight: 700;
+    font-size: 28px; /* Slightly smaller font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+    text-align: left; /* Align labels to the left */
+}
+
+/* Labels */
+.form-group label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space below labels */
+    color: #333; /* Label color */
+}
+
+/* Input Fields */
+.form-group input, .form-group textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+/* Textarea Specific */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+/* Submit Button */
+.submit-button {
+    background: #2a9d8f; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s; /* Transition for hover */
+}
+
+.submit-button:hover {
+    background: #21867b; /* Darker shade on hover */
+}
+
+/* About Us container */
+.about-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Same width as other containers */
+    margin: 100px auto; /* Centered */
+    text-align: center;
+}
+
+/* About Us Heading */
+.about-container h2 {
+    margin-bottom: 20px;
+    color: #1d3557;
+    font-weight: 700;
+    font-size: 28px; /* Slightly smaller font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Paragraphs */
+.about-container p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #555; /* Text color */
+    font-size: 16px; /* Font size */
+    line-height: 1.6; /* Spacing for readability */
+}
+
+/* About Us List */
+.about-container ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* List Items */
+.about-container li {
+    margin: 8px 0; /* Space between list items */
+    color: #333; /* Darker text color */
+}
+
+/* Admin Container */
+.admin-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Table Styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #2a9d8f;
+    color: white;
+    font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1d3557;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Container */
+
+
+/* Details within Dashboard */
+.dashboard-container .details p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* Recharge Container */
+.recharge-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Recharge Form */
+.recharge-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels and Inputs */
+.recharge-container label {
+    font-size: 16px;
+    text-align: left;
+}
+
+.recharge-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.recharge-container button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recharge-container button:hover {
+    background-color: #21867a;
+}
+
+/* Message Styling */
+.message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* Responsive about container */
+@media (max-width: 450px) {
+    .about-container {
+        width: 90%;
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+}
+
+
+/* Responsive contact container */
+@media (max-width: 450px) {
+    .contact-container {
+        width: 90%;
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Reduced margin for small screens */
+    }
+
+    .submit-button {
+        padding: 8px 16px; /* Adjust button padding on small screens */
+    }
+}
+
+
+/* Responsive packs container */
+@media (max-width: 450px) {
+    .packs-container {
+        width: 90%;
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .pack-item {
+        padding: 10px; /* Further reduce padding for individual packs */
+        flex: 0 0 100%; /* Each pack takes full width on small screens */
+    }
+
+    .pack-item h3 {
+        font-size: 20px; /* Smaller font size on mobile */
+    }
+
+    .pack-item p {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}
+
+
+/* Responsive dashboard container */
+@media (max-width: 450px) {
+    .dashboard-container {
+        width: 90%;
+    }
+
+    /* Adjust dashboard row for smaller screens */
+    .dashboard-row {
+        flex-direction: column;
+    }
+
+    .dashboard-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+/* Responsive signup container */
+@media (max-width: 450px) {
+    .signup-container {
+        width: 90%;
+    }
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .login-container {
+        width: 90%;
+    }
+}
